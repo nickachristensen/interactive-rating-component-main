@@ -1,0 +1,29 @@
+body {
+    background-color: RGB(20, 21, 25);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    background-color: RGB(31, 38, 48);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    color: RGB(109, 116, 126);
+    text-align: center;
+}
+
+.rating p {
+    background-color:RGB(38, 47, 56);
+    border-radius: 10px;
+}
