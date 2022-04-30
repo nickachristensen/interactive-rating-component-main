@@ -1,6 +1,6 @@
 html,
 body {
-    background-color: hsl(216, 12%, 8%);
+    background-color: #141519;
     height: 100%;
     width: 100%;
     display: flex;
@@ -10,7 +10,7 @@ body {
 }
 
 .main {
-    background-color: hsl(213, 19%, 18%);
+    background-color: #1f2630;
     height: 300px;
     width: 300px;
     border-radius: 10px;
@@ -22,7 +22,7 @@ body {
 img {
     height: 1vw;
     width: 1vw;
-    background-color: hsl(216, 12%, 54%);
+    background-color: #262f38;
     padding: 0.5em;
     border-radius: 20px;
 }
@@ -48,15 +48,28 @@ p {
     align-items: center;
 }
 
-.rating p {
-    background-color:hsl(216, 12%, 54%);
+.number {
+    background-color:#262f38;
     color: hsl(217, 12%, 63%);
     border-radius: 30px;
     padding: 0.5em;
     margin: 0.5em;
     width: 1vw;
-    text-align: center;
-    
+    text-align: center;  
+}
+.number:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%)
+}
+
+.selected {
+    background-color:hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 1vw;
+    text-align: center; 
 }
 
 button {
