@@ -1,21 +1,16 @@
-ratingDiv = document.querySelector('.rating');
-
-const numbers = [1, 2, 3, 4, 5];
+const ratings = document.querySelectorAll('.number');
+ratings.forEach(e => {e.addEventListener("click", handleClick)});
 
 function handleClick(e) {
-  const clearRatings = document.querySelectorAll('.selected');  
-  clearRatings.className = 'number';
-  const target = e.target;
-  const rating = target.textContent;
-  target.className = "selected"
+    if (e.target.classList.contains('selected')) {
+        e.target.classList.remove('selected');
+    } else {
+        ratings.forEach((btn) => btn.classList.remove('selected'));
+        e.target.classList.add('selected');
+        finalRating = e.target.innerHTML
+        console.log(finalRating)
+    }
 }
 
-const rating = numbers.forEach(number => {
-    const n = document.createElement("p");
-    n.className = "number"
-    n.innerHTML = `${number}`;
-    n.addEventListener("click", handleClick)
-    ratingDiv.append(n);
-});
 
 
