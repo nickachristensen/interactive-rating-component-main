@@ -1,29 +1,53 @@
+html,
 body {
     background-color: RGB(20, 21, 25);
     height: 100%;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 .main {
     background-color: RGB(31, 38, 48);
+    height: 400px;
+    width: 400px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
     font-size: 2em;
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 p {
     font-size: 1em;
     color: RGB(109, 116, 126);
-    text-align: center;
+    text-align: left;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .rating p {
     background-color:RGB(38, 47, 56);
     border-radius: 10px;
+    width: 1vw;
+    margin: 1vw;
+    text-align: center;
+}
+
+button {
+    background-color:#fc7613;
+    border-radius: 10px;
+    margin: 1vw;
+	border: none;
+    color: white;
 }
