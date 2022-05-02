@@ -97,3 +97,8 @@ button {
     padding: 1vw;
     position: absolute
 }
+
+.thank-you img {
+    height: 2vw;
+    width: 2vw;
+}

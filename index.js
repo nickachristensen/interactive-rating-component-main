@@ -9,13 +9,29 @@ function handleSubmit() {
     main.style.display = "none";
     thankYou = document.querySelector(".thank-you");
     thankYou.style.visibility = "visible";
-    thankYou.textContent =
-    `You selected ${finalRating} out of 5
 
-  Thank you!
+    img = document.createElement("img");
+    img.src = "images/illustration-thank-you.svg";
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!`;
+    tyRating = document.createElement("p");
+    tyRating.innerHTML = `You selected ${finalRating} out of 5`;
+
+    h1 = document.createElement("h1");
+    h1.innerHTML = "Thank you!";
+
+    p = document.createElement("p");
+    p.innerHTML = "We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!";
+
+    thankYou.append(img, tyRating, h1, p);
+    // thankYou.innerHTML =
+    // <img src="images/illustration-thank-you.svg"/>,
+
+    // <p>You selected {finalRating} out of 5</p>,
+
+    // <h1>Thank you!</h1>,
+
+    // <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+    // don’t hesitate to get in touch!</p>;
 
 }
 
