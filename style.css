@@ -95,10 +95,27 @@ button {
     display: flex;
     flex-direction: column;
     padding: 1vw;
-    position: absolute
+    position: absolute;
+    align-items: center;
+    justify-content: center;
 }
 
 .thank-you img {
-    height: 2vw;
-    width: 2vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 7vw;
+    width: 7vw;
+    background-color: #1f2630;
+}
+
+.ty-rating {
+    background-color:#262f38;
+    color:hsl(25, 97%, 53%);
+    border-radius: 30px;
+    padding: 0.2em;
+}
+
+.thank-you p {
+    text-align: center;
 }

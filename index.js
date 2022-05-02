@@ -14,6 +14,7 @@ function handleSubmit() {
     img.src = "images/illustration-thank-you.svg";
 
     tyRating = document.createElement("p");
+    tyRating.className ="ty-rating";
     tyRating.innerHTML = `You selected ${finalRating} out of 5`;
 
     h1 = document.createElement("h1");
