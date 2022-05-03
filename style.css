@@ -22,13 +22,23 @@ body {
     position: absolute;
 }
 
-.main img {
-    height: 1vw;
-    width: 1vw;
-    background-color: #262f38;
-    padding: 0.5em;
+.img-div {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    background-color: #262f38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.main img {
+    height: 30px;
+    width: 30px;
+}
+
+
 
 .main-text {
     display: flex;
@@ -97,6 +107,7 @@ button {
     color: hsl(0, 0%, 100%);
     padding: .5vw;
     font-weight: 400;
+    letter-spacing: 1px;
 
 }
 
@@ -157,5 +168,5 @@ button:hover {
 .thank-you p {
     text-align: center;
     line-height: 1.5;
-    
+
 }
