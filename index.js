@@ -5,7 +5,7 @@ const btn = document.querySelector(".btn");
 btn.addEventListener("click", handleSubmit);
 
 function handleSubmit() {
-    main = document.querySelector(".main");
+  const main = document.querySelector(".main");
     main.style.display = "none";
     thankYou = document.querySelector(".thank-you");
     thankYou.style.visibility = "visible";
